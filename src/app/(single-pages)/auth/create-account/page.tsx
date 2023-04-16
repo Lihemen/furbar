@@ -23,7 +23,7 @@ const schema = yup.object({
     .string()
     .required('Please enter last name')
     .min(2, 'Lastname must be at least 2 characters'),
-  email: yup.string().email('Please provide a valid email address'),
+  email: yup.string().required('Email is required').email('Please provide a valid email address'),
   password: yup.string().required('Password is required'),
 });
 
@@ -53,7 +53,7 @@ export default function Login() {
             placeholder='Enter your First Name'
             autoComplete='given-name'
             {...register('firstname')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>
             {errors.firstname?.message}{' '}
@@ -65,7 +65,7 @@ export default function Login() {
             placeholder='Enter your Last Name'
             autoComplete='family-name'
             {...register('lastname')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>
             {errors.lastname?.message}{' '}
@@ -77,7 +77,7 @@ export default function Login() {
             placeholder='Enter your email'
             autoComplete='email'
             {...register('email')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>{errors.email?.message} </span>
         </div>
@@ -88,7 +88,7 @@ export default function Login() {
             placeholder='Password'
             autoComplete='new-password'
             {...register('password')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>
             {errors.password?.message}{' '}

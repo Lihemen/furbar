@@ -42,7 +42,7 @@ export default function Login() {
             type='email'
             placeholder='Enter your email'
             {...register('email')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>{errors.email?.message} </span>
         </div>
@@ -51,7 +51,7 @@ export default function Login() {
             type='password'
             placeholder='Password'
             {...register('password')}
-            className='p-3 outline-none ring-1 ring-brand-gray/30 w-full'
+            className='p-3 outline-none border border-brand-gray/30 w-full'
           />
           <span className='text-red-400 text-xs'>
             {errors.password?.message}{' '}
