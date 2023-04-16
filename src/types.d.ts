@@ -1,8 +1,10 @@
 interface Product {
   name: string;
   id: string;
+  image: string;
   slug: string;
-  categ: string;
+  category: string;
+  price: number;
   variants: Record<string, string[]>[];
 }
 
