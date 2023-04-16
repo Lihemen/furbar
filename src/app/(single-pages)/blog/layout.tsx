@@ -16,11 +16,11 @@ export default function BlogLayout({
           <input
             type='text'
             placeholder='Search Your Article'
-            className='p-3 outline-none focus:ring-brand-yellow ring-1 ring-brand-gray/10 pr-10 font-extralight font-sm tracking-tight w-full'
+            className='p-3 outline-none focus:border-brand-yellow border border-brand-gray/10 pr-10 font-extralight font-sm tracking-tight w-full'
           />
           <button type='submit'>
             <SearchNormal1
-              className='bg-brand-yellow p-3 py-2 ring-1 ring-brand-yellow'
+              className='bg-brand-yellow p-3 py-2 border border-brand-yellow'
               size={48}
             />
           </button>
@@ -98,7 +98,7 @@ export default function BlogLayout({
             <input
               type='text'
               placeholder='Enter Your Email'
-              className='p-3 outline-none focus:ring-brand-yellow ring-1 ring-brand-gray/10 pr-10 font-extralight font-sm tracking-tight placeholder:text-center w-full'
+              className='p-3 outline-none focus:border-brand-yellow border border-brand-gray/10 pr-10 font-extralight font-sm tracking-tight placeholder:text-center w-full'
             />
             <input
               type='submit'

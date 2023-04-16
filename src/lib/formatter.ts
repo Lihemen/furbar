@@ -5,3 +5,10 @@ export function shortDateFormatter(value: string | Date) {
     year: 'numeric',
   });
 }
+export function numberFormatter(value: number | string) {
+  return Intl.NumberFormat('en-GB', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 3,
+    compactDisplay: 'long',
+  }).format(Number(value));
+}

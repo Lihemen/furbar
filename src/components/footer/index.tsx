@@ -34,7 +34,7 @@ export default function Footer() {
             <input
               type='email'
               placeholder='Your Mail'
-              className='outline-none ring-1 ring-brand-gray/30 focus:ring-brand-yellow py-2 px-3'
+              className='outline-none border border-brand-gray/30 focus:border-brand-yellow py-2 px-3'
             />
             <button type='submit' className='bg-brand-yellow p-3 px-4'>
               <FiSend />{' '}

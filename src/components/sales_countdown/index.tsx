@@ -10,7 +10,7 @@ export default function SalesCountdown() {
   const [days, hours, minutes, seconds] = useCountdown(new Date('2023/08/24'));
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 section-padding bg-[#f8f8f8] place-items-center !font-rajdhani'>
-      <div className='space-y-8'>
+      <div className='space-y-8 pt-10'>
         <h2 className='text-4xl font-semibold'>
           Chair Collection <span className='text-brand-yellow'>50%</span> Off
         </h2>
