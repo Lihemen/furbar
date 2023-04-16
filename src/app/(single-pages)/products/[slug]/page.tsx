@@ -19,7 +19,11 @@ export default function SingleProduct() {
     <div className='section-padding'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8  py-20'>
         <div>
-          <Image src={productImg} alt='Product Image' />
+          <Image
+            src={productImg}
+            alt='Product Image'
+            className='w-full max-h-[34rem]'
+          />
         </div>
         <div className='space-y-6'>
           <div>
@@ -88,7 +92,7 @@ export default function SingleProduct() {
             distinctio sapiente assumenda voluptates quo nihil!
           </p>
 
-          <div className='flex gap-4'>
+          <div className='flex flex-wrap gap-2 place-items-start'>
             <Group className='gap-0 justify-center'>
               <button
                 className='py-2 w-12 text-white text-center bg-[#494949] rounded-l'
@@ -120,10 +124,10 @@ export default function SingleProduct() {
               Add To Cart
             </button>
 
-            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300'>
+            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max'>
               <AiOutlineHeart />
             </button>
-            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300'>
+            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max'>
               <IoShuffle />
             </button>
           </div>
