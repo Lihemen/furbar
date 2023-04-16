@@ -11,7 +11,7 @@ import { shortDateFormatter } from '@/lib/formatter';
 
 export default function Blog() {
   return (
-    <div className='grid grid-cols-2 gap-y-10 gap-x-4'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4'>
       <div className='flex flex-col gap-6'>
         <Link href='blog/category/this-is-a-blog-post'>
           <Image src={blogImg1} alt='Blog Title 1' />
