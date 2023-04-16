@@ -214,9 +214,11 @@ export default function Navbar() {
                 </Menu.Item>
               </div>
 
-              <button className='p-4 bg-[#494949] text-white hover:bg-brand-yellow absolute bottom-3 w-[calc(100%-theme(space.4))] duration-300 ease-out'>
+              <Link
+                href='checkout'
+                className='p-4 bg-[#494949] text-white text-center hover:bg-brand-yellow absolute bottom-3 w-[calc(100%-theme(space.4))] duration-300 ease-out'>
                 Checkout
-              </button>
+              </Link>
             </Menu.Dropdown>
           </Menu>
         </ul>
