@@ -148,7 +148,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -159,7 +159,7 @@ export default function Products() {
               id: '2344',
               image: productImg2.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -170,7 +170,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -181,7 +181,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -192,7 +192,7 @@ export default function Products() {
               id: '2344',
               image: productImg2.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -203,7 +203,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -214,7 +214,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -225,7 +225,7 @@ export default function Products() {
               id: '2344',
               image: productImg2.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -236,7 +236,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -247,7 +247,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -258,7 +258,7 @@ export default function Products() {
               id: '2344',
               image: productImg2.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
@@ -269,7 +269,7 @@ export default function Products() {
               id: '2344',
               image: productImg.src,
               name: 'Product Name',
-              slug: '123',
+              slug: 'this-is-a-product',
               variants: [{}],
             }}
           />
