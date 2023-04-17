@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className='space-y-4'>
       <div className='relative group overflow-y-hidden'>
-        <Link href={`products/${product.slug}`}>
+        <Link href={`/products/${product.slug}`}>
           <Image
             className='bg-[#f8f8f8] !w-full min-h-[18rem]'
             src={product.image}
@@ -20,7 +20,7 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         </Link>
         <ul className='bg-slate-950/70 flex items-center w-max absolute top-full left-1/2 -translate-x-1/2 text-white/80 child:p-2 child:cursor-pointer hover:child:bg-brand-yellow group-hover:overflow-y-visible translate-y-full group-hover:-translate-y-full transition-all duration-300'>
-          <Link href={`products/${product.slug}`}>
+          <Link href={`/products/${product.slug}`}>
             <SearchNormal1 size={26} />
           </Link>
           <li>
