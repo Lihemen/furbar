@@ -95,7 +95,7 @@ export default function SingleProduct() {
           <div className='flex flex-wrap gap-2 place-items-start'>
             <Group className='gap-0 justify-center'>
               <button
-                className='py-[10px] w-12 text-white text-center bg-[#494949] rounded-l'
+                className='py-[11px] w-12 text-white text-center bg-[#494949] rounded-l'
                 onClick={() =>
                   setQty((prev) => {
                     if (prev === 1) return 1;
@@ -115,12 +115,12 @@ export default function SingleProduct() {
                 }}
               />
               <button
-                className='py-[10px] w-12 text-white text-center bg-[#494949] rounded-r'
+                className='py-[11px] w-12 text-white text-center bg-[#494949] rounded-r'
                 onClick={() => setQty((prev) => prev + 1)}>
                 +
               </button>
             </Group>
-            <button className='py-[10px] px-5 uppercase tracking-wider  text-white text-center bg-[#494949] rounded hover:bg-brand-yellow duration-300'>
+            <button className='py-[11px] px-5 uppercase tracking-wider  text-white text-center bg-[#494949] rounded hover:bg-brand-yellow duration-300'>
               Add To Cart
             </button>
 
