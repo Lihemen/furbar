@@ -31,6 +31,7 @@ module.exports = {
   plugins: [
     function ({ addVariant }) {
       addVariant('child', '& > *');
+      addVariant('data-active', '&[data-active]');
     },
   ],
 };

@@ -23,7 +23,10 @@ const schema = yup.object({
     .string()
     .required('Please enter last name')
     .min(2, 'Lastname must be at least 2 characters'),
-  email: yup.string().required('Email is required').email('Please provide a valid email address'),
+  email: yup
+    .string()
+    .required('Email is required')
+    .email('Please provide a valid email address'),
   password: yup.string().required('Password is required'),
 });
 
@@ -103,7 +106,7 @@ export default function Login() {
 
         <Link
           href='auth/login'
-          className='hover:underline hover:text-brand-yellow duration-150 ease-in'>
+          className='hover:underline hover:text-brand-yellow duration-150 ease-in w-max'>
           Already have an Account? Sign In{' '}
         </Link>
       </form>

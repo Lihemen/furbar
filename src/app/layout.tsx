@@ -2,20 +2,15 @@
 
 import './globals.css';
 
-import useScrollSnap from '@/hooks/useScrollTop';
 import { MantineProvider } from '@mantine/core';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  useScrollSnap();
-
+export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang='en'>
       <body>
-        <MantineProvider withNormalizeCSS>{children}</MantineProvider>
+        <MantineProvider withNormalizeCSS withGlobalStyles>
+          {props.children}
+        </MantineProvider>
       </body>
     </html>
   );

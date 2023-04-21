@@ -74,13 +74,19 @@ export default function Navbar() {
             </Menu.Target>
             <Menu.Dropdown className='bg-white px-2'>
               <Menu.Item>
-                <Link href='/my-account'>My Account</Link>
+                <Link href='/my-account' className='block'>
+                  My Account
+                </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href='/checkout'>Checkout</Link>
+                <Link href='/checkout' className='block'>
+                  Checkout
+                </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href='/auth/login'>Sign In</Link>
+                <Link href='/auth/login' className='block'>
+                  Sign In
+                </Link>
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>

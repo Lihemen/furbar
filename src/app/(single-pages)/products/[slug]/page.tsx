@@ -95,7 +95,7 @@ export default function SingleProduct() {
           <div className='flex flex-wrap gap-2 place-items-start'>
             <Group className='gap-0 justify-center'>
               <button
-                className='py-[11px] w-12 text-white text-center bg-[#494949] rounded-l'
+                className='h-11 w-12 text-white text-center bg-[#494949] rounded-l'
                 onClick={() =>
                   setQty((prev) => {
                     if (prev === 1) return 1;
@@ -111,23 +111,23 @@ export default function SingleProduct() {
                 size='xs'
                 classNames={{
                   input:
-                    'bg-[#494949] w-8 !py-5 rounded-none border-none outline-none ring-none text-white text-center',
+                    'bg-[#494949] w-8 h-11 rounded-none border-none outline-none ring-none text-white text-center',
                 }}
               />
               <button
-                className='py-[11px] w-12 text-white text-center bg-[#494949] rounded-r'
+                className='h-11 w-12 text-white text-center bg-[#494949] rounded-r'
                 onClick={() => setQty((prev) => prev + 1)}>
                 +
               </button>
             </Group>
-            <button className='py-[11px] px-5 uppercase tracking-wider  text-white text-center bg-[#494949] rounded hover:bg-brand-yellow duration-300'>
+            <button className='h-11 px-5 uppercase tracking-wider  text-white text-center bg-[#494949] rounded hover:bg-brand-yellow duration-300'>
               Add To Cart
             </button>
 
-            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max'>
+            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max h-11'>
               <AiOutlineHeart />
             </button>
-            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max'>
+            <button className='py-2 text-2xl text-white text-center bg-[#494949] rounded px-4 hover:bg-brand-yellow duration-300 w-max h-11'>
               <IoShuffle />
             </button>
           </div>

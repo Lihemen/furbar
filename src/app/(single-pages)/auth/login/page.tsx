@@ -41,6 +41,7 @@ export default function Login() {
           <input
             type='email'
             placeholder='Enter your email'
+            autoComplete='email'
             {...register('email')}
             className='p-3 outline-none border border-brand-gray/30 w-full'
           />
@@ -50,6 +51,7 @@ export default function Login() {
           <input
             type='password'
             placeholder='Password'
+            autoComplete='current-password'
             {...register('password')}
             className='p-3 outline-none border border-brand-gray/30 w-full'
           />
@@ -76,12 +78,12 @@ export default function Login() {
 
         <Link
           href='auth/forgot-password'
-          className='hover:underline hover:text-brand-yellow duration-150 ease-in'>
+          className='hover:underline hover:text-brand-yellow duration-150 ease-in w-max'>
           Lost your Password?{' '}
         </Link>
         <Link
           href='auth/create-account'
-          className='hover:underline hover:text-brand-yellow duration-150 ease-in'>
+          className='hover:underline hover:text-brand-yellow duration-150 ease-in w-max'>
           No Account? Create One{' '}
         </Link>
       </form>

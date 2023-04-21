@@ -36,6 +36,9 @@
   .section-padding {
     @apply px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-[19rem];
   }
+  .-section-padding {
+    @apply -mx-4 md:-mx-8 lg:-mx-16 xl:-mx-32 2xl:-mx-[19rem];
+  }
 }
 
 @layer components {
