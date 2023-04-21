@@ -9,3 +9,8 @@ interface Product {
 }
 
 type ToastTypes = 'error' | 'success' | 'warning';
+
+interface AppearanceController {
+  opened: boolean;
+  close: Function;
+}

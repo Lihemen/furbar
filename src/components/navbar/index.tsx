@@ -5,15 +5,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { CiMenuFries } from 'react-icons/ci';
-import { RiShoppingBag2Line } from 'react-icons/ri';
+import { RiHeartLine, RiShoppingBag2Line } from 'react-icons/ri';
 
 import cart1 from '@/assets/cart-1.webp';
 import logo from '@/assets/logo.webp';
 import { Drawer, Menu } from '@mantine/core';
 
+import MobileNav from '../mobile_nav';
+import Wishlist from '../wishlist';
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
+  const [showWishlist, setShowWishList] = useState(false);
 
   function stickNavbar() {
     let windowHeight = window.scrollY;
@@ -64,6 +68,7 @@ export default function Navbar() {
               </div>
             </Menu.Dropdown>
           </Menu>
+
           <Menu
             position='bottom-end'
             transitionProps={{ transition: 'pop-top-left', duration: 150 }}>
@@ -90,6 +95,13 @@ export default function Navbar() {
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
+          <button onClick={() => setShowWishList(true)}>
+            <RiHeartLine size={24} />
+          </button>
+          <Wishlist
+            opened={showWishlist}
+            close={() => setShowWishList(false)}
+          />
           <Menu
             position='bottom-end'
             transitionProps={{ transition: 'pop-top-left', duration: 150 }}>
@@ -234,43 +246,10 @@ export default function Navbar() {
           className='font-bold font-2xl lg:hidden'>
           <CiMenuFries size={32} />{' '}
         </button>
-        <Drawer
-          onClose={() => setShowMobileNav(false)}
+        <MobileNav
           opened={showMobileNav}
-          position='right'
-          overlayProps={{ opacity: 0.5, blur: 4 }}
-          size='xs'>
-          <ul className='items-start uppercase text-sm font-semibold tracking-wider flex flex-col hover:child:bg-brand-yellow/20 child:p-4 child:flex w-full child:w-full border-b'>
-            <Link onClick={() => setShowMobileNav(false)} href='/'>
-              Home
-            </Link>
-            <Link onClick={() => setShowMobileNav(false)} href='/about-us'>
-              About
-            </Link>
-            <Link onClick={() => setShowMobileNav(false)} href='/products'>
-              Shop
-            </Link>
-            <Link onClick={() => setShowMobileNav(false)} href='/blog'>
-              Blog
-            </Link>
-            <Link onClick={() => setShowMobileNav(false)} href='/cart'>
-              My Cart
-            </Link>
-            <Link onClick={() => setShowMobileNav(false)} href='/contact-us'>
-              Contact
-            </Link>
-          </ul>
-          <div className='grid grid-cols-2 gap-2 child:p-4 child:border child:border-brand-gray/50 pt-10 text-center uppercase hover:child:bg-brand-yellow/20 '>
-            <Link onClick={() => setShowMobileNav(false)} href='/auth/login'>
-              Sign In
-            </Link>
-            <Link
-              onClick={() => setShowMobileNav(false)}
-              href='/auth/create-account'>
-              Sign Up
-            </Link>
-          </div>
-        </Drawer>
+          close={() => setShowMobileNav(false)}
+        />
       </nav>
     </header>
   );
